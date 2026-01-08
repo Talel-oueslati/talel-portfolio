@@ -24,8 +24,8 @@ const ProjectsWindow: React.FC = () => {
       description: 'JVM metadata extraction and real-time monitoring dashboards (CPU, memory, GC)',
       tech: ['Spring Boot', 'Oracle', 'Thymeleaf'],
       videos: [
-        { label: 'real-time JVM monitoring', src: 'src/assets/jmv runing demo.mp4' },
-        { label: 'Static Analysis', src: 'src/assets/demo application-static prj.mp4' }
+        { label: 'real-time JVM monitoring', src: '/jmv runing demo.mp4' },
+        { label: 'Static Analysis', src: '/demo application-static prj.mp4' }
       ],
       color: 'from-violet-500 to-purple-500',
     },
@@ -33,7 +33,7 @@ const ProjectsWindow: React.FC = () => {
       title: 'Mobile passport scanning With OCR integration Internship Project',
       description: 'Hybrid mobile application development for passport scanning & OCR integration',
       tech: ['Spring Boot', 'Ionic', 'Oracle', 'Angular'],
-      videos: [{ label: 'Demo', src: 'src/assets/media1.mp4' }],
+      videos: [{ label: 'Demo', src: '/media1.mp4' }],
       color: 'from-violet-500 to-purple-500',
     },
     {
@@ -41,7 +41,7 @@ const ProjectsWindow: React.FC = () => {
       description: 'CV analysis & candidate shortlisting application with intelligent parsing and scoring algorithms',
       tech: ['NestJS', 'Angular', 'TypeScript'],
       videos: [
-        { label: 'Full Demo', src: 'src/assets/Automated-Resume-Screening-Candidate-Shortlisting-Web-App demo.mp4' }
+        { label: 'Full Demo', src: '/Automated-Resume-Screening-Candidate-Shortlisting-Web-App demo.mp4' }
       ],
       color: 'from-primary to-accent',
     },
@@ -50,7 +50,7 @@ const ProjectsWindow: React.FC = () => {
       description: 'Complete hotel booking and management platform with real-time availability tracking',
       tech: ['Spring Boot', 'Thymeleaf', 'Oracle'],
       videos: [
-        { label: 'Demo', src: '/assets/hotel-demo.mp4' }
+        { label: 'Demo', src: '/hotel-demo.mp4' }
       ],
       color: 'from-amber-500 to-orange-500',
     },
@@ -59,7 +59,7 @@ const ProjectsWindow: React.FC = () => {
       description: 'Personal movie tracker with smart recommendations powered by TMDB API integration',
       tech: ['Ionic', 'React', 'Firebase', 'TMDB API'],
       videos: [
-        { label: 'Demo', src: '/assets/movzie-app-demo.mp4' }
+        { label: 'Demo', src: '/movzie-app-demo.mp4' }
       ],
       color: 'from-violet-500 to-purple-500',
     },
