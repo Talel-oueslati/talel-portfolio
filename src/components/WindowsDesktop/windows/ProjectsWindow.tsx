@@ -24,7 +24,7 @@ const ProjectsWindow: React.FC = () => {
       description: 'JVM metadata extraction and real-time monitoring dashboards (CPU, memory, GC)',
       tech: ['Spring Boot', 'Oracle', 'Thymeleaf'],
       videos: [
-        { label: 'real-time JVM monitoring', src: 'src/assets/jmv runing demo.mp4' },
+        { label: 'real-time JVM monitoring', src: '/assets/jmv runing demo.mp4' },
         { label: 'Static Analysis', src: 'src/assets/demo application-static prj.mp4' }
       ],
       color: 'from-violet-500 to-purple-500',
