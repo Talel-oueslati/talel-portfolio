@@ -180,6 +180,70 @@ Upon validation, the system can send an automated email to notify the candidate 
       ],
       color: 'from-primary to-accent',
     },
+     {
+      title: 'HR & Leave Management System',
+      description: 'Employee management with authentication, notifications, and approval workflows',
+documentation: `
+### 4. Implemented Solution
+
+This project is a web-based workforce management system designed to manage employee leave, timesheets, performance evaluations, and HR operations in a centralized platform.
+
+The application is developed using **NestJS** for the backend and **Angular** for the frontend. It supports role-based access for employees and HR administrators, ensuring secure and structured management of organizational data.
+
+#### 4.1 Authentication and Roles
+The system uses JWT-based authentication to secure user access. Users are assigned roles such as Employee, HR, or Admin, which define their permissions and accessible features.
+
+#### 4.2 Leave Management
+Employees can submit leave requests and view their remaining leave balance. HR administrators can review, approve, or reject leave requests through an administrative dashboard.
+
+#### 4.3 Timesheet Management
+Employees record their daily working hours using timesheets. HR users validate submitted timesheets to ensure accurate tracking of working time.
+
+#### 4.4 Performance Evaluations
+HR administrators can create and manage employee performance evaluations. Employees are able to consult their evaluation results through their personal space.
+
+#### 4.5 Notifications
+The system provides notifications for important events such as leave approval or rejection, timesheet validation, and evaluation updates.
+
+---
+
+### 5. Technical Architecture
+
+| Layer | Technology | Role |
+|-------|-----------|------|
+| Frontend | Angular | User interface for employees and HR |
+| Backend | NestJS | Business logic and REST APIs |
+| Authentication | Passport.js + JWT | Secure access and role control |
+| Database | MySQL + TypeORM | Data persistence |
+| File Upload | Multer | Upload of leave-related documents |
+| Notifications | Cron / Background Jobs | Automated alerts and reminders |
+
+---
+
+### 6. Workflow
+
+1. User logs into the system.
+2. Employee submits leave requests or timesheets.
+3. HR reviews and validates submissions.
+4. System updates request status.
+5. Notifications are sent to users.
+6. HR consults reports and statistics.
+
+---
+
+### 7. Outcomes
+
+- Centralized employee and HR management.
+- Efficient leave and timesheet processing.
+- Secure role-based access control.
+- Improved communication through notifications.
+- Academic-level implementation of a workforce management system.
+`,
+      tech: ['NestJS', 'Angular', 'PostgreSQL'],
+          videos: [{ label: 'Employee Leave Request & Timesheet Submission', src: '/employee1.mp4' },{ label: 'HR Validation of Employee Requests', src: '/rh.mp4' },{ label: 'View HR Decision Notifications', src: '/employee2.mp4' }],
+
+      color: 'from-emerald-500 to-teal-500',
+    },
     {
       title: 'Hotel Reservation Management System',
       description: 'Complete hotel booking and management platform with real-time availability tracking',
@@ -204,17 +268,7 @@ Upon validation, the system can send an automated email to notify the candidate 
     },
  
   
-    {
-      title: 'HR & Leave Management System',
-      description: 'Employee management with authentication, notifications, and approval workflows',
-            documentation: 'A comprehensive hotel management platform designed to streamline booking operations and enhance guest experiences. The system provides real-time room availability tracking, reservation management, and booking confirmations. Key features include dynamic pricing, room type management, guest profile handling, and detailed reporting. Developed using Spring Boot for enterprise-grade backend services, Thymeleaf for server-side rendered views, and Oracle database for reliable transaction management.',
-
-      tech: ['NestJS', 'Angular', 'PostgreSQL'],
-      videos: [
-        { label: 'Running Demo', src: 'src/assezts/jmv runing demo.mp4' }
-      ],
-      color: 'from-emerald-500 to-teal-500',
-    },
+   
   ];
 
 
