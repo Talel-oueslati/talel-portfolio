@@ -114,7 +114,7 @@ Advanced technical details, source code, and real data cannot be disclosed publi
 
 ,
       tech: ['Spring Boot', 'Ionic', 'Oracle', 'Angular'],
-      videos: [{ label: 'Demo', src: '/media1.mp4' }],
+      videos: [{ label: 'Demo client features', src: '/media1.mp4' },{ label: 'Demo admin dashboard', src: '/media2.mp4' }],
       color: 'from-violet-500 to-purple-500',
     },
     {
@@ -175,7 +175,8 @@ Upon validation, the system can send an automated email to notify the candidate 
 
       tech: ['NestJS', 'Angular', 'TypeScript'],
       videos: [
-        { label: 'Full Demo', src: '/Automated-Resume-Screening-Candidate-Shortlisting-Web-App demo.mp4' }
+        { label: 'Full Demo', src: '/Automated-Resume-Screening-Candidate-Shortlisting-Web-App demo.mp4' },
+        
       ],
       color: 'from-primary to-accent',
     },
