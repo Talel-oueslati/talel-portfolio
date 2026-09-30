@@ -9,7 +9,7 @@ import ExperienceWindow from './windows/ExperienceWindow';
 import ProjectsWindow from './windows/ProjectsWindow';
 import EducationWindow from './windows/EducationWindow';
 import ContactWindow from './windows/ContactWindow';
-import talelPhoto from '@/assets/talel-photo.jpg';
+import talelPhoto from '@/assets/me2.png';
 
 interface WindowState {
   id: string;

@@ -10,14 +10,46 @@ const EducationWindow: React.FC = () => {
           <GraduationCap size={24} className="text-primary" />
           Education
         </h2>
-        <div className="glass-card p-5 relative overflow-hidden">
-          {/* Decorative gradient */}
+
+        {/* Engineering Degree — most recent */}
+        <div className="glass-card p-5 relative overflow-hidden mb-4">
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent" />
-          
+
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1">
-              <div className="flex items-center gap-3 mb-2">
-                <h3 className="font-bold text-foreground text-base">Bachelor's Degree in Information Systems Development</h3>
+              <div className="flex items-center gap-3 mb-2 flex-wrap">
+                <h3 className="font-bold text-foreground text-base">
+                  Engineering Degree in Software Engineering
+                </h3>
+                <div className="award-badge">
+                  <Trophy size={12} />
+                  Current
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground flex items-center gap-2">
+                <span className="w-2 h-2 bg-primary rounded-full" />
+                TEK-UP University
+              </p>
+              <span className="inline-block mt-2 text-xs bg-primary/20 text-primary px-3 py-1 rounded-full font-medium">
+                2023 – 2026
+              </span>
+            </div>
+            <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center border border-primary/20">
+              <GraduationCap size={28} className="text-primary" />
+            </div>
+          </div>
+        </div>
+
+        {/* Bachelor's Degree */}
+        <div className="glass-card p-5 relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-primary" />
+
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex-1">
+              <div className="flex items-center gap-3 mb-2 flex-wrap">
+                <h3 className="font-bold text-foreground text-base">
+                  Bachelor's Degree in Information Systems Development
+                </h3>
                 <div className="award-badge">
                   <Trophy size={12} />
                   Degree
@@ -27,7 +59,7 @@ const EducationWindow: React.FC = () => {
                 <span className="w-2 h-2 bg-primary rounded-full" />
                 ISET Zaghouan
               </p>
-              <span className="inline-block mt-2 text-xs bg-accent/20 text-accent px-3 py-1 rounded-full font-medium">
+           <span className="inline-block mt-2 text-xs bg-primary/20 text-primary px-3 py-1 rounded-full font-medium">
                 2020 – 2023
               </span>
             </div>
@@ -52,7 +84,7 @@ const EducationWindow: React.FC = () => {
                 <Medal size={24} className="text-orange-400" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">HTML5 & CSS</h3>
+                <h3 className="font-semibold text-foreground">HTML5, CSS</h3>
                 <p className="text-xs text-muted-foreground">Certiport</p>
               </div>
             </div>
@@ -63,7 +95,7 @@ const EducationWindow: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="glass-card p-5 relative overflow-hidden group">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-500" />
             <div className="flex items-center gap-4">
@@ -103,7 +135,7 @@ const EducationWindow: React.FC = () => {
               <div className="bg-gradient-to-r from-emerald-500 to-green-500 h-1.5 rounded-full" style={{ width: '90%' }} />
             </div>
           </div>
-          
+
           <div className="glass-card p-4 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-500" />
             <h3 className="font-semibold text-foreground mb-2">English</h3>
@@ -115,7 +147,7 @@ const EducationWindow: React.FC = () => {
               <div className="bg-gradient-to-r from-blue-500 to-indigo-500 h-1.5 rounded-full" style={{ width: '75%' }} />
             </div>
           </div>
-          
+
           <div className="glass-card p-4 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-violet-500 to-purple-500" />
             <h3 className="font-semibold text-foreground mb-2">French</h3>

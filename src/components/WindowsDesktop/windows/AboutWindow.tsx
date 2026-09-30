@@ -33,18 +33,18 @@ const AboutWindow: React.FC = () => {
               Full-Stack Developer
             </h2>
           </div>
-          
+
           <div className="flex items-center gap-2 mb-5">
             <div className="flex items-center gap-2 bg-secondary/50 px-3 py-1.5 rounded-full">
               <MapPin size={14} className="text-accent" />
-              <span className="text-sm text-foreground">Tunisia</span>
+              <span className="text-sm text-foreground">Tunisia, El Mourouj</span>
             </div>
             <div className="flex items-center gap-2 bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">
               <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
               <span className="text-xs text-primary">Available for work</span>
             </div>
           </div>
-          
+
           <div className="glass-card p-4">
             <h3 className="font-semibold mb-3 flex items-center gap-2 text-sm text-foreground">
               <Target size={16} className="text-primary" />
@@ -52,10 +52,10 @@ const AboutWindow: React.FC = () => {
             </h3>
             <ul className="space-y-2.5">
               {[
-                { icon: <Code2 size={14} />, text: 'Full-stack web developer with strong foundation in modern technologies' },
-                { icon: <Lightbulb size={14} />, text: 'Passionate about continuous learning and growth' },
-                { icon: <Target size={14} />, text: 'Interested in impactful, real-world projects' },
-                { icon: <Sparkles size={14} />, text: 'Background in Information Systems Development' },
+                { icon: <Code2 size={14} />, text: 'Full-stack developer with a strong backend focus (Java/Spring Boot & NestJS)' },
+                { icon: <Sparkles size={14} />, text: 'Built a multi-tenant ERP/CRM platform with JWT, 2FA & RBAC' },
+                { icon: <Lightbulb size={14} />, text: 'Experienced in system monitoring, OCR solutions & real-time dashboards' },
+                { icon: <Target size={14} />, text: 'Passionate about clean code, performance optimization & continuous learning' },
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3 text-sm text-muted-foreground">
                   <span className="mt-0.5 text-primary">{item.icon}</span>

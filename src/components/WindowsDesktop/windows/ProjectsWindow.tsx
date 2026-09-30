@@ -21,6 +21,81 @@ const ProjectsWindow: React.FC = () => {
   const [docProject, setDocProject] = useState<Project | null>(null);
 
   const projects: Project[] = [
+    {
+  title: 'Multi-Tenant ERP/CRM Platform (PFE Project)',
+  description: 'Enterprise-grade ERP/CRM platform with multi-tenancy, RBAC, and a real-time API monitoring dashboard',
+  documentation: `
+### 4. Implemented Solution
+
+A full-featured, multi-tenant ERP/CRM platform designed for enterprises to manage their entire business workflow in a single secure environment. The platform enforces strict tenant isolation and provides a modular architecture covering HR, Inventory, Procurement, CRM, Sales, Delivery, Invoicing, and Accounting.
+
+The backend is built with **NestJS** and **PostgreSQL (Supabase)**, while the frontend uses **Next.js**. Security is enforced through **JWT authentication**, **Two-Factor Authentication (2FA)**, and **Role-Based Access Control (RBAC)**.
+
+#### 4.1 Multi-Tenancy
+Each tenant operates in a fully isolated data space. Tenant context is resolved per request, and all queries are scoped automatically to prevent cross-tenant data leakage.
+
+#### 4.2 Authentication & Security
+- JWT-based session management
+- Two-Factor Authentication (2FA) for sensitive accounts
+- Role-Based Access Control (RBAC) for granular permissions
+- Audit logs, automated backups, and security policies
+
+#### 4.3 Core Business Modules
+- Human Resources (HR)
+- Inventory Management
+- Procurement
+- CRM
+- Sales
+- Delivery
+- Invoicing
+- Accounting
+
+#### 4.4 Real-Time API Monitoring
+A dedicated dashboard tracks:
+- API traffic and request patterns
+- Rate limiting and abuse detection
+- Performance metrics and latency
+- Real-time alerts on anomalies
+
+---
+
+### 5. Technical Architecture
+
+| Layer | Technology | Role |
+|-------|-----------|------|
+| Frontend | Next.js | Modern SSR/SSG interface |
+| Backend | NestJS | Modular REST API and business logic |
+| Database | PostgreSQL (Supabase) | Multi-tenant data storage |
+| Auth | JWT + 2FA | Secure authentication |
+| Access Control | RBAC | Role and permission management |
+| Monitoring | Custom Dashboard | API metrics, alerts, rate limiting |
+
+---
+
+### 6. Achieved Results
+
+- Fully functional multi-tenant ERP/CRM platform
+- Secure authentication with 2FA and RBAC
+- Complete coverage of core enterprise modules
+- Real-time observability of API performance
+- Strong data isolation and compliance-ready audit trails
+
+---
+
+### 7. Confidentiality
+
+This project was carried out during an end-of-studies internship at Codes Pixels.  
+Source code and internal data are confidential and cannot be shared publicly.
+`,
+  tech: ['NestJS', 'Next.js', 'PostgreSQL', 'Supabase', 'JWT', 'RBAC'],
+  videos: [
+    // Uncomment and add when you have demo videos:
+    // { label: 'Platform Overview', src: '/erp-overview.mp4' },
+    // { label: 'Multi-Tenant Dashboard', src: '/erp-tenants.mp4' },
+    // { label: 'API Monitoring', src: '/erp-monitoring.mp4' },
+  ],
+  color: 'from-blue-500 to-indigo-500',
+},
    {
       title: 'Full-stack web app for JVM static analysis and real-time monitoring',
       description: 'JVM metadata extraction and real-time monitoring dashboards (CPU, memory, GC)',

@@ -4,6 +4,20 @@ import { Building2, Calendar, CheckCircle2, Briefcase } from 'lucide-react';
 const ExperienceWindow: React.FC = () => {
   const experiences = [
     {
+      company: 'Codes Pixels',
+      role: 'PFE Intern — Full-Stack Developer',
+      period: '03/2026 – 08/2026',
+      description: 'Multi-tenant ERP/CRM platform for enterprise management',
+      color: 'from-blue-500 to-indigo-500',
+      achievements: [
+        'Built with NestJS, Next.js, PostgreSQL (Supabase)',
+        'Secure auth: JWT, 2FA & role-based access control (RBAC)',
+        'Core modules: HR, Inventory, Procurement, CRM, Sales, Invoicing, Accounting',
+        'Strict multi-tenancy isolation, audit logs & backups',
+        'Real-time API monitoring dashboard with rate limiting & alerts',
+      ],
+    },
+    {
       company: 'Mpsoft',
       role: 'Full-Stack Developer Intern',
       period: '07/2025 – 08/2025',
@@ -47,7 +61,7 @@ const ExperienceWindow: React.FC = () => {
         <Briefcase size={24} className="text-primary" />
         Work Experience
       </h2>
-      
+
       <div className="space-y-5">
         {experiences.map((exp, index) => (
           <div
@@ -56,7 +70,7 @@ const ExperienceWindow: React.FC = () => {
           >
             {/* Gradient accent bar */}
             <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${exp.color}`} />
-            
+
             <div className="flex justify-between items-start mb-4">
               <div className="flex items-start gap-4">
                 <div className={`w-12 h-12 bg-gradient-to-br ${exp.color} bg-opacity-20 rounded-xl flex items-center justify-center border border-white/10 flex-shrink-0`}>
@@ -72,9 +86,9 @@ const ExperienceWindow: React.FC = () => {
                 {exp.period}
               </span>
             </div>
-            
+
             <p className="text-sm text-foreground mb-4 pl-16">{exp.description}</p>
-            
+
             <div className="pl-16 space-y-2">
               {exp.achievements.map((achievement, i) => (
                 <div key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
